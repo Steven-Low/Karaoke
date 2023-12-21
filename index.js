@@ -39,7 +39,11 @@ import('node-fetch')
         
         exec(command, (error, stdout, stderr) => {
             if (error) {
-                res.status(500).send(url);
+              const errorResponse = {
+                error: `An error occurred: ${error.message} for ${url}`,
+                stderr: stderr.toString().trim(), // Convert stderr to string and trim whitespace
+              };
+                res.status(500).send(errorResponse);
                 return;
             }
             const audioURL = stdout.trim();
