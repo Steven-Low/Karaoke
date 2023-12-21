@@ -39,7 +39,7 @@ import('node-fetch')
         
         exec(command, (error, stdout, stderr) => {
             if (error) {
-                res.status(500).send('Error fetching audio URL for ${url}');
+                res.status(500).send(url);
                 return;
             }
             const audioURL = stdout.trim();
