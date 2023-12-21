@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "express": "^4.17.2",
-    "yt-dlp": "^2022.01.08"
+    "express": "^4.17.2"
   }
 }
