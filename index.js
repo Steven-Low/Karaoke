@@ -1,7 +1,7 @@
 const express = require('express');
 const { exec } = require('child_process');
 
-const fetch = require('node-fetch');
+const fetch = import('node-fetch');
 const fs = require('fs');
 
 const downloadURL = 'https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp';
