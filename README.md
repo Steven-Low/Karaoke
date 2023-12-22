@@ -1,5 +1,6 @@
 # Music API
-## An api for returning json file of audioURL from videoID of youtube video
+## This is an API that is capable of retrieving a JSON file containing the audio URL associated with a specific YouTube video ID.
+
 ```
 https://music-api-4b3l.onrender.com/getAudioURL/{videoID}
 ```
